@@ -20,6 +20,7 @@ jQuery(document).ready(function(){
 })
 
 var loading = false;
+var ended 	= false;
 
 $(window).scroll(function()
 {
@@ -35,6 +36,13 @@ $(window).scroll(function()
 
 function getData () {
 	$.get("page.php", { start_at: $('.box').length || 0 }, function(data){
+
+		if(data == "empty" && ended == false) {
+			alert($_TEXT_END);
+			ended = true;
+			return;
+		}
+
     	$("#container").append(data);
     	$("#container").masonry('reload');
     	//

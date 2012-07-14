@@ -4,10 +4,13 @@
 $config 			= array(
 	'page_title'	=> 'H.O.T. --- Sexy image visualizer', // title of your page project
 	'image_path'	=> "images/", // folder where all images are located
+	'allow_download'=> true,
 	'language'		=> array(
 		'name'		=> 'Name',
 		'size'		=> 'Size',
-		'download'	=> 'Download file'
+		'dimensions'=> 'Dimensions',
+		'download'	=> 'Download file',
+		'ended'		=> 'There\'s no more images to show.'
 	),
 	'per_page'		=> 20, // how many images show per page
 	'width'			=> 300, // width for image thumbnail

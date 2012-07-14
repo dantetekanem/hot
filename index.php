@@ -13,6 +13,9 @@
 	<link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.2" type="text/css" media="screen" />
 	<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.2"></script>
 
+	<script type="text/javascript">
+		$_TEXT_END 		= "<?= $config['language']['ended'] ?>";
+	</script>
 	<script type="text/javascript" src="js/hot.js"></script>
 	<link rel="stylesheet" href="css/hot.css" type="text/css" media="screen" />
 

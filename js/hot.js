@@ -35,11 +35,13 @@ $(window).scroll(function()
 });
 
 function getData () {
+	if(ended == true) return;
 	$.get("page.php", { start_at: $('.box').length || 0 }, function(data){
 
 		if(data == "empty" && ended == false) {
 			alert($_TEXT_END);
 			ended = true;
+			$("#loader").hide();
 			return;
 		}
 

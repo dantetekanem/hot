@@ -7,7 +7,7 @@
 	$start 		= $_GET['start_at'] == "" ? 0 : $_GET['start_at'];
 	$limit_max 	= $config['per_page'];
 
-	$images = array_slice(glob($path."*"), $start, $limit_max);
+	$images = array_slice(glob($path."{*.jpg,*.png,*.gif,*.jpeg,*.JPG,*.PNG,*.GIF,*.JPEG}", GLOB_BRACE), $start, $limit_max);
 	foreach($images as $img) {
 		$img_name 	= end(explode("/", $img));
 		$filesize 	= filesize($img);

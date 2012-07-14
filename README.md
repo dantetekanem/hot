@@ -6,6 +6,7 @@ HOT is a simple directory image visualizer for PHP
 Preview
 ===
 http://www.leonardopereira.com/hot-demo/
+http://www.leonardopereira.com/hot-demo/estelar.php (custom css)
 
 How to use:
 ===

@@ -3,6 +3,10 @@ HOT
 
 HOT is a simple directory image visualizer for PHP
 
+Preview
+===
+http://www.leonardopereira.com/hot-demo/
+
 How to use:
 ===
 
